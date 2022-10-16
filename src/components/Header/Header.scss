@@ -5,7 +5,6 @@
     height: 100px;
     display: flex;
     align-items: center;
-
     h1 {margin : 20%}
     ul{
         list-style: none;
@@ -14,9 +13,7 @@
             float: left;
             margin: 10px;
         }
-        .search{
-            width: 150px;
-        }
+        .search{width: 150px;}
     }
     
 }
