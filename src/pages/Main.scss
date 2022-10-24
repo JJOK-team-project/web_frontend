@@ -1,0 +1,30 @@
+.slide-box{
+    display: flex;
+    justify-content: center;
+    .slide-bar{
+        width: 90%;
+        height: 300px;
+        background-color: #d2d2d2;
+        margin-top: 3%;
+        text-align: center;
+    }
+}
+.contents-box{
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    #content{
+        width: 27%;
+        height: 350px;
+        margin-top: 4%;
+        background-color: #d2d2d2;
+        display: flex;
+        justify-content: center;
+        #img-box{
+            margin-top: 10px;
+            width: 60%;
+            height: 150px;
+            background-color: #FFFFFF;
+        }
+    }
+}
