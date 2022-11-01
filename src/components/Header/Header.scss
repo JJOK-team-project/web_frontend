@@ -1,0 +1,42 @@
+.header{
+    display: flex;
+    background-color: #d2d2d2;
+    align-items: baseline;
+    justify-content: space-evenly;
+    padding: .5rem;
+    gap : 1rem;
+    .link{
+        background: none;
+        border: none;
+        text-decoration: none;
+        color : #777;
+        font-size: inherit;
+        cursor: pointer;
+        padding: 0;
+    }
+    .link:hover{
+        color: #000;
+    }
+    .dropdown{
+        position: relative;
+        .link:focus + .dropdown-menu{ // link 에 인접한 dropdown-menu 를 변경
+            opacity: 1;
+            transform: translateY(0px);
+        }
+    }
+    .dropdown-menu{
+        position : absolute;
+        left : 0;
+        top : calc(100% + .25rem);
+        background-color: #FFF;
+        padding: 15px;
+        border-radius: 5px;
+        box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .1);
+        opacity: 0;
+        transition: opacity 0.15s ease-in-out, transform 0.15s ease-in-out;
+        transform: translateY(-10px);
+    }
+    .dropdown-menu:active{
+        opacity: 1;
+    }
+}
