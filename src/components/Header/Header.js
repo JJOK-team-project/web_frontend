@@ -1,16 +1,18 @@
 import "./Header.scss";
-
+const dropdowncon = {
+    <div class="dropdown-menu">
+    <p>Dropdown content</p>
+    <p>Dropdown content</p>
+    <p>Dropdown content</p>
+    </div>
+}
 function Header() {
   return (
     <div class="header">
         <h1>title</h1>
         <div class="dropdown">
             <button class="link">Information</button>
-            <div class="dropdown-menu">
-                <p>Dropdown content</p>
-                <p>Dropdown content</p>
-                <p>Dropdown content</p>
-            </div>
+            
         </div>
         <div class="dropdown">
             <button class="link">Booking</button>
